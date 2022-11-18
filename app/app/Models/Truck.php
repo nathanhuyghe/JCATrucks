@@ -52,4 +52,8 @@ class Truck extends Model
         'doorlaadhoogte',
         'opties'
     ];
+
+    public function users(){
+        return $this->belongsToMany(User::class);
+    }
 }
